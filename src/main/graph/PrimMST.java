@@ -49,7 +49,7 @@ public class PrimMST {
         int w = e.weight;
 
         /*
-        Check if the neighbor node 'v' is not yet in the MST and if the current edge weight 'w' is cheaper than the previously recorded weight for that node.
+        Check if neighbor 'v' is not in MST and found a cheaper edge 'w'
         */
         if(!visited[v] && w < weight[v]) {
           weight[v] = w;                  // Update the best (minimum) weight to reach node v
